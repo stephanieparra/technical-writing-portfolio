@@ -55,13 +55,13 @@ This is a snippet of the HTML I initially wrote based on my design ideas. The fo
 #### Notes on the initial version:
 
 I used:
-- Semantic HTML with headings and unordered lists
-- Basic alt text for images
-- Button for interactivity that will open a prompt when clicked (it's keyboard-accessible as well)
+- Semantic HTML but not everything is optimized. I still use <div> which doesn't describe anything for a screen reader.
+- Basic alt text for images.
+- Button for interactivity that will open a prompt when clicked (it's natively keyboard-accessible as well).
 
 ## 🤖 Step 2: Accessibility Review with AI
 
-After writing my initial HTML, I used AI (ChatGPT) to review for accessibility improvements. This step shows how I iterated on my HTML using AI to improve accessibility. Documenting my workflow highlights not just the final code, but how I solved problems and made the page more inclusive and moreso up to coding standards!
+After writing my initial HTML, I used AI (ChatGPT) to review for accessibility improvements. This step shows how I iterated on my HTML using AI to improve accessibility. Documenting my workflow highlights not just the final code, but how I solved problems and made the page more inclusive and moreso up to coding AND accessibility standards!
 
 ### Example AI Prompts
 ##### 1. Check accessibility issues in HTML Prompt
@@ -146,7 +146,7 @@ button {
 
  - Use a font that adds to your aesthetic! I used monospace for a pixel-y, retro look.
  - Add hover effects (like scaling images or adjusting opacity) for interactivity without extra JavaScript.
- - Balance strong backgrounds with high-contrast text for readability. Knowing that my text wouldn't stand out on the background image I created in Canva, I created a "box" with CSS properties so that my paragraph can sit on a contrasting background.
+ - Balance strong backgrounds with high-contrast text for readability. Knowing that my paragraph text wouldn't stand out on the background image I made in Canva, I created a "box" with CSS properties so that my paragraph can sit on a contrasting background.
 
 ## 👾 4. Add JavaScript Button Interaction
 
@@ -206,9 +206,9 @@ function windowResized() {
 ## ✅ 6. Final Touches: Accessibility + Aesthetics
 
 - Confirmed all images have alt text.
-- Ensured semantic tags (headings, lists, paragraphs) were used.
+- Ensured semantic tags (headings, sections, paragraphs) were used.
 - Used AI to cross-check for accessibility gaps (e.g., aria-label suggestions).
-- Balanced a playful design with readability and inclusivity.
+- Balanced a retro, early-computer/internet, design with readability and inclusivity.
 
 ## 🤔 7. Reflection
 
@@ -217,16 +217,16 @@ This project demonstrates:
 - How to structure and style a landing page with HTML + CSS.
 - How to add simple interactivity with JavaScript.
 - How to use AI to improve accessibility.
-- How to sprinkle in creative coding with p5.js for delight.
+- How to sprinkle in creative coding with p5.js just for fun (as coding should be fun too)!
 
 
 ## 🚀 8. Considerations & Future Improvements
 
 While this project demonstrates the essentials of building, styling, using AI to improve accessibility, and adding some interactive elements to a landing page, there are several areas where it could be extended:
 
-- **Responsiveness:** Currently the layout looks best on desktop. Adding media queries would improve the mobile/tablet experience.  
+- **Responsiveness:** Currently the layout looks best on desktop with some responsiveness for certain screen sizes. Adding media queries would improve the mobile/tablet experience.  
 - **Accessibility Testing:** While AI provided suggestions, running the site through tools like Lighthouse, WAVE, or axe-core could surface more issues.  
 - **Performance:** Images could be optimized for faster load times.  
 - **Internationalization (i18n):** Since pan dulce is culturally specific, translations or multilingual support could make the page more inclusive.  
-- **Additional Interactivity:** Expanding the JavaScript beyond a single button (e.g., quizzes, random pastry suggestions) would increase engagement.  
+- **Additional Interactivity:** Expanding the JavaScript beyond a single button (e.g., quizzes, random pan dulce suggestions) would increase engagement.  
 - **Styling Consistency:** Using a CSS framework or design system might make scaling easier if the page grew into a larger site.  
