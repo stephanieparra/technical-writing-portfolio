@@ -72,13 +72,13 @@ After writing my initial HTML, I used AI (ChatGPT) to review for accessibility i
 
 ##### 2. Generate descriptive alt text for images
 ```
-Suggest alt text for this image: "pink conchas on a white plate with colorful sugar shells"
+"Suggest alt text for this image: 'pink conchas on a white plate with colorful sugar shells'"
 ```
 
 #### Changes made based on AI suggestions:
 
 - Updated alt text for all images
-- Verified heading hierarchy (<h1> → <h2>)
+- Verified heading hierarchy
 - Reviewed semantic HTML structure for lists and sections
 - Ensured interactive elements (like the button) are accessible
 
