@@ -55,9 +55,9 @@ This is a snippet of the HTML I initially wrote based on my design ideas. The fo
 #### Notes on the initial version:
 
 I used:
-- Semantic HTML with headings, <ul>/<li> lists
+- Semantic HTML with headings and unordered lists
 - Basic alt text for images
- - Button for interactivity that will open a prompt when clicked (it's keyboard-accessible as well)
+- Button for interactivity that will open a prompt when clicked (it's keyboard-accessible as well)
 
 ## 🤖 Step 2: Accessibility Review with AI
 
