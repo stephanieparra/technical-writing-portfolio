@@ -19,7 +19,7 @@ See [Web AIM's accessiblity tag cheatsheet](https://webaim.org/resources/htmlche
 
 ## 📝 Step 1: HTML Structure (Initial Version - No Accessibility Improvements Yet)
 
-This is a snippet of the HTML I initially wrote based on my design ideas. The focus was on creating a simple, aesthetic, and culturally relevant (to me) landing page featuring some info on **Pan Dulce Mexicano**. You can see the full html on my Github repo [here](https://github.com/stephanieparra/landing-page-project/blob/main/index.html).  
+This is a snippet of the HTML I initially wrote based on my design ideas. The focus was on creating a simple, aesthetic, and culturally relevant (to me) landing page featuring some info on **Pan Dulce Mexicano**. You can see the full HTML on my Github repo [here](https://github.com/stephanieparra/landing-page-project/blob/main/index.html).  
 
 ```html
 <!DOCTYPE html>
@@ -101,7 +101,7 @@ For the “✨What's the best pan dulce?✨” button:
 
 With structure and accessibility in place, the next step is to style the landing page. I wanted to make the theme very pastel and "kawaii," so I created a background image in Canva with graphics that fit the vibe I wanted to create. I hosted the background image on Amazon Web Services and rendered a url I could use in the CSS.
 
-Here are some highlights from the `styles.css` file below. See the full css file [here.](https://github.com/stephanieparra/landing-page-project/blob/main/src/styles.css)
+Here are some highlights from the `styles.css` file below. See the full CSS file [here.](https://github.com/stephanieparra/landing-page-project/blob/main/src/styles.css)
 
 ```css
 h1 {
@@ -197,7 +197,7 @@ function windowResized() {
 }
 ```
 
-##### 💡 Why p5.js?
+#### 💡 Why p5.js?
 
 - It’s beginner-friendly but powerful for visuals and creative coding.
 - Encourages experimentation with interactivity.
