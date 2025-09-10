@@ -2,7 +2,7 @@
 
 I love HTML for its simplicity and accessible nature -  both as a friendly gateway into development and for its semantic clarity that supports assistive technologies like screen readers and keyboard navigation.  
 
-This project walks through building a simple landing page while integrating accessibility best practices, with the goal of helping new developers learn core concepts while also practicing inclusive design. Along the way, I used AI to iterate on the code and improve accessibility features. You can see the full repo [here](https://github.com/stephanieparra/landing-page-project) and the live page [here.](https://pan-dulce-landing-page.netlify.app/)
+This project walks through building a simple landing page while integrating accessibility best practices, with the goal of helping new developers learn core concepts while also practicing inclusive design. Along the way, I used AI to iterate on the code and improve accessibility features. You can see the full repo [here](https://github.com/stephanieparra/landing-page-project) and the live page [here.](https://pan-dulce-landing-page.netlify.app/). This landing page project was also featured on [SheCodes](https://www.linkedin.com/feed/update/urn:li:activity:6876848311945580544/)!
 
 See [Web AIM's accessiblity tag cheatsheet](https://webaim.org/resources/htmlcheatsheet/) and [Mozilla's MDN page on accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML) to learn more.
 
