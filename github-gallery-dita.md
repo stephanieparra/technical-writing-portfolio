@@ -11,6 +11,11 @@
 This project demonstrates how to fetch data from the GitHub API, dynamically render user information and repositories, and provide a responsive, interactive experience. Additionally, it illustrates a mock AI workflow to show how AI could enhance repository descriptions for beginner developers.
 
 #### You can see the full repo [here.](https://github.com/stephanieparra/github-repo-gallery)
+#### DITA Version
+
+For a structured, professional DITA-style version of this documentation:
+
+- [View DITA XML](./github-gallery/github-gallery.dita.xml)  
 
 ---
 
