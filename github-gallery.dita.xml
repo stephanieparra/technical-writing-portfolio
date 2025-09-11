@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="github-gallery">
+    <title>GitHub Gallery Project Technical Documentation</title>
+
+    <!-- Overview / Concept -->
+    <concept id="overview">
+        <title>Overview</title>
+        <body>
+            <p><b>Project:</b> GitHub Gallery</p>
+            <p><b>Author:</b> Stephanie Parra</p>
+            <p><b>Technologies:</b> HTML, CSS, JavaScript, GitHub API</p>
+            <p><b>Purpose:</b> Display GitHub user profile and repositories in a searchable gallery with an additional mock AI workflow component for enhanced user experience.</p>
+            <p><b>Goal / Learning Objective:</b> This project demonstrates how to fetch data from the GitHub API, dynamically render user information and repositories, and provide a responsive, interactive experience. Additionally, it illustrates a mock AI workflow to show how AI could enhance repository descriptions for beginner developers.</p>
+        </body>
+    </concept>
+
+    <!-- System Requirements -->
+    <concept id="system-requirements">
+        <title>System Requirements</title>
+        <body>
+            <ul>
+                <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                <li>Internet connection to fetch data from GitHub API</li>
+            </ul>
+        </body>
+    </concept>
+
+    <!-- Installation Task -->
+    <task id="installation">
+        <title>Installation</title>
+        <body>
+            <steps>
+                <step>
+                    <cmd>git clone https://github.com/stephanieparra/github-repo-gallery.git</cmd>
+                </step>
+                <step>
+                    <cmd>cd github-repo-gallery</cmd>
+                </step>
+                <step>
+                    <info>Open index.html in a browser (or via Live Server in VSCode) to view and edit in real-time.</info>
+                </step>
+            </steps>
+        </body>
+    </task>
+
+    <!-- Usage Task -->
+    <task id="usage">
+        <title>Usage</title>
+        <body>
+            <steps>
+                <step>App fetches GitHub profile for stephanieparra automatically.</step>
+                <step>User profile information (avatar, bio, location, number of public repos) is displayed.</step>
+                <step>A list of repositories is displayed in a searchable gallery.</step>
+                <step>Click on a repository name to view details: description, default branch, languages, and link to GitHub repo.</step>
+                <step>Use the search input to dynamically filter repositories by name (use lowercase for search queries).</step>
+            </steps>
+        </body>
+    </task>
+
+    <!-- API Integration / Reference -->
+    <reference id="api-integration">
+        <title>API Integration</title>
+        <body>
+            <section id="github-api">
+                <title>GitHub API</title>
+                <ul>
+                    <li>Fetch user info: <xref href="https://api.github.com/users/stephanieparra"/></li>
+                    <li>Fetch repos: <xref href="https://api.github.com/users/stephanieparra/repos?sort=updated&per_page=100"/></li>
+                    <li>Fetch repo languages: repo.languages_url</li>
+                </ul>
+            </section>
+
+            <section id="ai-workflow">
+                <title>AI Workflow (Mock)</title>
+                <p><b>Goal:</b> Demonstrate how AI could enhance user experience by generating repository descriptions.</p>
+                <p><b>Trigger:</b> When repositories are rendered.</p>
+                <p><b>Inputs:</b> Repository name.</p>
+
+                <task id="ai-workflow-steps">
+                    <title>Process (Mocked)</title>
+                    <steps>
+                        <step>Create a paragraph element (&lt;p&gt;) for the AI description.</step>
+                        <step>Populate with mock AI text.</step>
+                        <step>Append to the repository item in the DOM.</step>
+                        <step>Example code:
+<codeblock>
+&lt;!-- Mock AI description --&gt;
+const aiDescription = document.createElement("p");
+aiDescription.classList.add("ai-description");
+// Mock text //
+aiDescription.innerText = `Mock AI-generated fact about this repo: Imagine that beginner developers can use this repo ${repo.name} to learn faster by exploring examples of how either JS, Bootstrap, React, or p5.js work in the project!`;
+repoItem.appendChild(aiDescription);
+repoList.append(repoItem);
+</codeblock>
+                        </step>
+                        <step>The AI-generated text appears below each repository name in the gallery, giving beginner developers a concise, engaging explanation of how the repo can help them learn.</step>
+                        <note>This is a mock workflow; no actual API is called.</note>
+                    </steps>
+                </task>
+            </section>
+        </body>
+    </reference>
+
+    <!-- Diagram / Flowchart Concept -->
+    <concept id="mermaid-flowchart">
+        <title>Mermaid Flowchart</title>
+        <body>
+            <p>Project flow from user input to AI description display:</p>
+            <fig>
+                <title>GitHub Gallery Flowchart</title>
+                <image href="github-gallery-flowchart.png"/>
+                <alt>Diagram showing user input, API calls, rendering, and AI workflow steps.</alt>
+            </fig>
+        </body>
+    </concept>
+
+    <!-- Rationale / Concept -->
+    <concept id="rationale">
+        <title>Rationale / Benefits</title>
+        <body>
+            <ul>
+                <li><b>Enhanced learning:</b> Beginners can immediately understand the educational value of each repository.</li>
+                <li><b>Dynamic content potential:</b> Enterprises could replace the mock workflow with real AI integration to generate descriptions for hundreds of repos automatically.</li>
+                <li><b>Scalable UX improvement:</b> AI-generated content could adapt based on repo metadata, user preferences, or historical usage patterns.</li>
+                <li><b>Engagement:</b> Makes the gallery more interactive and informative, improving adoption and understanding for new developers exploring example projects.</li>
+            </ul>
+        </body>
+    </concept>
+
+    <!-- Troubleshooting Task -->
+    <task id="troubleshooting">
+        <title>Troubleshooting</title>
+        <body>
+            <steps>
+                <step>Ensure an active internet connection for GitHub API requests.</step>
+                <step>Verify that the GitHub username is correct if no repos appear.</step>
+                <step>Confirm that the AI mock description code is included after each repo is appended. Missing descriptions are normal if the workflow is commented out.</step>
+            </steps>
+        </body>
+    </task>
+
+    <!-- Tips / Best Practices -->
+    <concept id="tips-best-practices">
+        <title>Tips & Best Practices</title>
+        <body>
+            <ul>
+                <li>Future integration: Replace mock workflow with real OpenAI API for dynamic content.</li>
+                <li>Use semantic HTML for accessibility.</li>
+                <li>Test responsiveness on multiple devices.</li>
+                <li>Keep repository gallery performance in mind if integrating AI for all items.</li>
+            </ul>
+        </body>
+    </concept>
+
+    <!-- Conclusion -->
+    <concept id="conclusion">
+        <title>Conclusion</title>
+        <body>
+            <p>The GitHub Gallery project combines:</p>
+            <ul>
+                <li><b>API Integration:</b> Fetch and display live data</li>
+                <li><b>Dynamic UI Rendering:</b> Interactive repository gallery</li>
+                <li><b>Searchable Interface:</b> Filter repositories in real-time</li>
+                <li><b>Mock AI Workflow:</b> Conceptual demonstration of AI-enhanced learning</li>
+            </ul>
+            <p>This project illustrates both <b>technical skills</b> and <b>conceptual thinking</b> for creating beginner-friendly, engaging, and interactive documentation-ready applications.</p>
+        </body>
+    </concept>
+
+</topic>
